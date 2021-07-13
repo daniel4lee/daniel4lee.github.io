@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="jasonlai">
+  <title>Spatiotemporal SR with Cross-Task Consistency</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!--<meta property="og:image" content="http://gph.is/2oZQz8h" />-->
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#citation">Citation</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#download">Results</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+        <h4 class="header center black-text">Unsupervised Multi-class Object Co-segmentation<br> with Contrastively Learned CNNs</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col m3 s12">
+          <div class="author"><a href = "https://sites.google.com/view/hanyilin" target="blank">Kuan-Yi Lee</a></div>
+          <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua University</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://www.citi.sinica.edu.tw/pages/pchsiu/" target="blank">Hsin-En Su</a></div>
+          <div class="school"><a href="https://www.nctu.edu.tw/en" target="blank">National Chiao Tung University</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="http://www.cityu.edu.hk/stfprofile/teiwei.kuo.htm" target="blank">Ching-Yuan Lin</a></div>
+          <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua University</a></div>
+        </h5>
+        
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://www.linkedin.com/in/cctsai1/" target="blank">Chung-Chi Tsai</a></div>
+          <div class="school"><a href="https://www.qualcomm.com/" target="blank">Qualcomm Technologies, Inc.</a></div>
+        </h5>
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://www.ee.nthu.edu.tw/cwlin/" target="blank">Chia-Wen Lin</a></div>
+          <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua University</a></div>
+        </h5>
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://sites.google.com/site/yylinweb/" target="blank">Yen-Yu Lin</a></div>
+          <div class="school"><a href="https://www.nctu.edu.tw/en" target="blank">National Chiao Tung University</a></div>
+        </h5>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+        <div class="col l12 m12 s12">
+          <img class="responsive-img" src="img/Figure2_our_framework.png" width="70%">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+      <br>
+      <p align="justify">Spatiotemporal super-resolution (SR) aims to upscale both the spatial and temporal dimensions of input videos, and produces videos with higher frame resolutions and rates. It involves two essential sub-tasks: spatial SR and temporal SR. We design a two-stream network for spatiotemporal SR in this work. One stream contains a temporal SR module followed by a spatial SR module, while the other stream has the same two modules in the reverse order. Based on the interchangeability of performing the two sub-tasks, the two network streams are supposed to produce consistent spatiotemporal SR results. Thus, we present a cross-stream consistency to enforce the similarity between the outputs of the two streams. In this way, the training of the two streams is correlated, which allows the two SR modules to share their supervisory signals and improve each other. In addition, the proposed cross-stream consistency does not consume labeled training data and can guide network training in an unsupervised manner. We leverage this property to carry out semi-supervised spatiotemporal SR. It turns out that our method makes the most of training data, and can derive an effective model with few high-resolution and high-frame-rate videos, achieving the state-of-the-art performance.</p>
+    </div>
+
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+      <div class="row">
+      
+        <div class="col m2 s6 center">
+          <a href="http://vllab.cs.nctu.edu.tw/images/paper/ijcai-lin20.pdf" target="">
+            <img src="img/icon_pdf.png" width="60%">
+          </a>
+          <br>
+          <a href="http://vllab.cs.nctu.edu.tw/images/paper/ijcai-lin20.pdf" target="">IJCAI2020<br></a>
+        </div>
+
+    </div>
+
+    <div class="row section scrollspy" id="citation">
+      <div class="title">Citation</div>
+      <p>Han-Yi Lin, Pi-Cheng Hsiu, Tei-Wei Kuo, and Yen-Yu Lin, "Spatiotemporal Super-Resolution with Cross-Task Consistency and its Semi-supervised Extension", in International Joint Conference on Artificial Intelligence (IJCAI), 2020.</p>
+     
+      <br>
+
+      <div class="title">BibTex</div>
+      <pre>
+@inproceedings{STSRwithCrossTask,
+  author    = {Lin, Han-Yi and Hsiu, Pi-Cheng and Kuo, Tei-Wei and Lin, Yen-Yu},
+  title     = {Spatiotemporal Super-Resolution with Cross-Task Consistency and Its Semi-supervised Extension},
+  booktitle = {International Joint Conference on Artificial Intelligence (IJCAI)},
+  year      = {2020}
+}
+      </pre>
+
+    </div>
+
+    <div class="section row scrollspy" id="download">
+      <div class="title">Code and Results</div>
+      <br>
+      <div class="row">
+
+        <div class="col m6 s12 center">
+          <a href="" target="">
+            <img src="img/github.png">
+          </a>
+          <br>
+          <a href="" target="">Code<br>(coming soon)</a>
+        </div>
+
+        <div class="col m6 s12 center">
+          <a href="" target="">
+            <img src="img/icon_zip.png">
+          </a>
+          <br>
+          <a href="" >Results<br>(coming soon)</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row section scrollspy" id="reference">
+      <div class="title">References</div>
+      <ul>
+        <li>&bull; 
+          Kim et al. <a href="http://openaccess.thecvf.com/content_cvpr_2016/html/Kim_Accurate_Image_Super-Resolution_CVPR_2016_paper.html" target="blank">Accurate Image Super-Resolution Using Very Deep Convolutional Networks.</a> In CVPR, 2016.
+        </li>
+        
+        <li>&bull; 
+          Shi et al. <a href="http://openaccess.thecvf.com/content_cvpr_2016/html/Shi_Real-Time_Single_Image_CVPR_2016_paper.html" target="blank">Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network.</a> In CVPR, 2016.
+        </li>
+        
+        <li>&bull; 
+          Haris et al. <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Haris_Deep_Back-Projection_Networks_CVPR_2018_paper.html" target="blank">Deep Back-Projection Networks for Super-Resolution.</a> In CVPR, 2018.
+        </li>
+        
+        <li>&bull; 
+          Liu et al. <a href="http://openaccess.thecvf.com/content_iccv_2017/html/Liu_Video_Frame_Synthesis_ICCV_2017_paper.html" target="blank">Video Frame Synthesis Using Deep Voxel Flow.</a> In ICCV, 2017.
+        </li>
+        
+        <li>&bull; 
+          Jiang et al. <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Jiang_Super_SloMo_High_CVPR_2018_paper.html" target="blank">Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation.</a> In CVPR, 2018.
+        </li>
+        
+        <li>&bull; 
+          Bao et al. <a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Bao_Depth-Aware_Video_Frame_Interpolation_CVPR_2019_paper.html" target="blank">Depth-Aware Video Frame Interpolation.</a> In CVPR, 2019.
+        </li>
+        
+        <li>&bull; 
+          Shahar et al. <a href="http://www.wisdom.weizmann.ac.il/~vision/SingleVideoSR.html" target="blank">Space-Time Super-Resolution from a Single Video.</a> In CVPR, 2011.
+        </li>
+        
+        <li>&bull; 
+          Sharma et al. <a href="https://link.springer.com/chapter/10.1007/978-3-319-69900-4_74" target="blank">Space-Time Super-Resolution Using Deep Learning Based Framework.</a> In PReMI, 2017.
+        </li>
+
+        <li>&bull; 
+          Liu et al. <a href="http://vllab.cs.nctu.edu.tw/images/paper/aaai-liu19.pdf" target="blank">Deep Video Frame Interpolation using Cyclic Frame Generation.</a> In AAAI, 2019.
+        </li>
+        
+        <li>&bull; 
+          Chen et al. <a href="https://yunchunchen.github.io/CrDoCo/" target="blank">CrDoCo: Pixel-Level Domain Transfer With Cross-Domain Consistency.</a> In CVPR, 2019.
+        </li>
+        
+        <li>&bull; 
+          Chen et al. <a href="https://yunchunchen.github.io/MaCoSNet-web/" target="blank">Show, Match and Segment: Joint Weakly Supervised Learning of Semantic Matching and Object Co-segmentation.</a> TPAMI, 2020.
+        </li>
+
+        <li>&bull; 
+          Tsai et al. <a href="http://vllab.cs.nctu.edu.tw/images/paper/tip-tsai18.pdf" target="blank">Image Co-saliency Detection and Co-segmentation via Progressive Joint Optimization.</a> TIP, 2019.
+        </li>
+        
+        <li>&bull; 
+          Chen et al. <a href="http://vllab.cs.nctu.edu.tw/images/paper/pami-Chen15.pdf" target="blank">Co-Segmentation Guided Hough Transform for Robust Feature Matching.</a> TPAMI, 2015.
+        </li>
+        
+        
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
+
