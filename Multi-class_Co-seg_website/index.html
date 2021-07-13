@@ -42,30 +42,30 @@
       <br>
 
       <div class="row center">
-        <h5 class="header col m3 s12">
-          <div class="author"><a href = "https://sites.google.com/view/hanyilin" target="blank">Kuan-Yi Lee</a></div>
+        <h5 class="header col m4 s12">
+          <div class="author"><a href ="https://daniel4lee.github.io/Multi-class_Co-seg_website/" target="blank">Kuan-Yi Lee</a></div>
           <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua University</a></div>
         </h5>
 
-        <h5 class="header col m3 s12">
-          <div class="author"><a href="https://www.citi.sinica.edu.tw/pages/pchsiu/" target="blank">Hsin-En Su</a></div>
+        <h5 class="header col m4 s12">
+          <div class="author"><a href="https://daniel4lee.github.io/Multi-class_Co-seg_website/" target="blank">Hsin-En Su</a></div>
           <div class="school"><a href="https://www.nctu.edu.tw/en" target="blank">National Chiao Tung University</a></div>
         </h5>
 
-        <h5 class="header col m3 s12">
-          <div class="author"><a href="http://www.cityu.edu.hk/stfprofile/teiwei.kuo.htm" target="blank">Ching-Yuan Lin</a></div>
+        <h5 class="header col m4 s12">
+          <div class="author"><a href="https://daniel4lee.github.io/Multi-class_Co-seg_website/" target="blank">Ching-Yuan Lin</a></div>
           <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua University</a></div>
         </h5>
-        
-        <h5 class="header col m3 s12">
+      <div class="row center">
+        <h5 class="header col m4 s12">
           <div class="author"><a href="https://www.linkedin.com/in/cctsai1/" target="blank">Chung-Chi Tsai</a></div>
           <div class="school"><a href="https://www.qualcomm.com/" target="blank">Qualcomm Technologies, Inc.</a></div>
         </h5>
-        <h5 class="header col m3 s12">
+        <h5 class="header col m4 s12">
           <div class="author"><a href="https://www.ee.nthu.edu.tw/cwlin/" target="blank">Chia-Wen Lin</a></div>
           <div class="school"><a href="http://nthu-en.site.nthu.edu.tw/" target="blank">National Tsing Hua University</a></div>
         </h5>
-        <h5 class="header col m3 s12">
+        <h5 class="header col m4 s12">
           <div class="author"><a href="https://sites.google.com/site/yylinweb/" target="blank">Yen-Yu Lin</a></div>
           <div class="school"><a href="https://www.nctu.edu.tw/en" target="blank">National Chiao Tung University</a></div>
         </h5>
@@ -79,35 +79,42 @@
 
   <div class="container">
 
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row center">
-        <div class="col l12 m12 s12">
-          <img class="responsive-img" src="img/Figure2_our_framework.png" width="70%">
-          </a>
-        </div>
-      </div>
-
-    </div>
-
     <div class="row section scrollspy" id="abstract">
       <div class="title">Abstract</div>
       <br>
       <p align="justify">Unsupervised multi-class object co-segmentation aims to co-segment objects of multiple common categories present in a set of images in an unsupervised manner. It is challenging since there are no annotated training data of the object categories. Furthermore, there exist high intra-class variations and inter-class similarities among different object categories and the background. Our work addresses this complex problem by proposing the first unsupervised, end-to-end trainable CNNbased framework consisting of three collaborative modules: the attention module, the co-attention map generator, and the feature extractor. The attention module employs two types of attention: self-attention and mutual attention. While the former aims to capture long-range object dependency, the latter focuses on exploring co-occurrence patterns across images. With the attention module, the co-attention map generator learns to capture the objects of the same categories. Afterward, the feature extractor estimates the discriminative cues to separate the common-class objects and backgrounds. Finally, we optimize the network in an unsupervised fashion via the proposed co-attention loss, which pays attention to reducing the intra-class object discrepancy while enlarging the inter-class margins of the extracted features. Experimental results show that the proposed approach performs favorably against the existing algorithms.</p>
     </div>
+    <div class="section">
 
+      <!--   Icon Section   -->
+      <div class="title">Model Overview</div>
+      <div class="row center">
+        <div class="col l12 m12 s12">
+          <img class="responsive-img" src="img/Figure2_our_framework.png" width="90%">
+          
+          </a>
+        </div>
+      </div>
+      <div class="title">Qualitative Results</div>
+      <div class="row center">
+        <div class="col l12 m12 s12">
+          <img class="responsive-img" src="img/result.png" width="90%">
+          </a>
+        </div>
+      </div>
+      
+    </div>
     <div class="row section scrollspy" id="paper">
       <div class="title">Papers</div>
       <br>
       <div class="row">
       
         <div class="col m2 s6 center">
-          <a href="http://vllab.cs.nctu.edu.tw/images/paper/ijcai-lin20.pdf" target="">
+          <a href="" target="">
             <img src="img/icon_pdf.png" width="60%">
           </a>
           <br>
-          <a href="http://vllab.cs.nctu.edu.tw/images/paper/ijcai-lin20.pdf" target="">IJCAI2020<br></a>
+          <a href="" target="">2021<br></a>
         </div>
 
     </div>
